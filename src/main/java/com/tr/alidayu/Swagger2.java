@@ -21,7 +21,7 @@ public class Swagger2 {
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
-                .tags(new Tag("Alidayu", "阿里大于")) // , getTags()
+                .tags(new Tag("Mail", "邮件"), new Tag("Msg", "短信")) // , getTags()
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.tr.alidayu.controller"))
                 .paths(PathSelectors.any())
@@ -39,7 +39,7 @@ public class Swagger2 {
     private ApiInfo apiInfo() {
         Contact contact = new Contact("taorun", "http://www.baidu.com", "tr1838@163.com");
         return new ApiInfoBuilder()
-                .title("Alidayu")
+                .title("短信&邮件发送")
                 //.description("接口文档<br/>签名算法：String sign = MD5(userid + timestamp + secret);<br/>userid和secret将会预先给到调用方，请妥善保存。")
                 .description("接口文档 api")
                 .termsOfServiceUrl("http://www.google.com")

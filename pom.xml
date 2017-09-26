@@ -59,6 +59,22 @@
 		    <artifactId>commons-lang3</artifactId>
 		    <version>3.6</version>
 		</dependency>
+		
+		
+		<!-- java发送邮件 https://mvnrepository.com/artifact/javax.mail/mail -->
+		<dependency>
+		    <groupId>javax.mail</groupId>
+		    <artifactId>mail</artifactId>
+		    <version>1.4.7</version>
+		</dependency>
+		
+		<!-- 阿里大于发送短信 本地库 -->
+		<dependency>
+		    <groupId>com.tr</groupId>
+		    <artifactId>msg</artifactId>
+		    <version>1.0</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
@@ -69,6 +85,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	
 
 </project>

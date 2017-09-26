@@ -23,9 +23,9 @@ import com.tr.alidayu.result.Result;
  *
  */
 @Service
-public class EmailSender {
+public class MailSender {
 
-    public static final Logger logger = LoggerFactory.getLogger(EmailSender.class);
+    public static final Logger logger = LoggerFactory.getLogger(MailSender.class);
 
     @Autowired
     private MimeMessage message;
