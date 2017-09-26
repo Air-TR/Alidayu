@@ -60,7 +60,6 @@
 		    <version>3.6</version>
 		</dependency>
 		
-		
 		<!-- java发送邮件 https://mvnrepository.com/artifact/javax.mail/mail -->
 		<dependency>
 		    <groupId>javax.mail</groupId>
